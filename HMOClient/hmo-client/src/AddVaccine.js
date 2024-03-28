@@ -32,7 +32,7 @@ export default function AddVaccine() {
     const getAllProducer = async () => {
         const { data } = await axios.get("https://localhost:7245/api/Producer")
         console.log(data)
-        dis(setAllProducers(data))
+        dis(setAllProducers(data)) 
         setLoading(true)
     }
 
@@ -85,7 +85,7 @@ export default function AddVaccine() {
         })
     }
 
-    // update patient 
+    // save vaccine 
     const save = async () => {
         if (isFormDataValid()) {
             await axios.post("https://localhost:7245/api/Vaccination", formData)
@@ -109,16 +109,15 @@ export default function AddVaccine() {
         </Box>
         <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={"producer"}
           label="producer"
           onChange={handleChange}
-        > <MenuItem></MenuItem>
+        > 
         {all.map(x => {
-          return(<MenuItem value={x.id}>{x.name}</MenuItem>)})}
+          return(<MenuItem name="producer" value={x.name}>{x.name}</MenuItem>)})}
         </Select>
       </FormControl>
     </Box>
