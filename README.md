@@ -4,6 +4,7 @@ In this project I implemented a FullStack system for managing patients' corona d
 ## Client- react
 **Screenshots:**
 https://drive.google.com/file/d/19Xgcyik4NRz7XrqsCikGALCSQb_hdWAi/view?usp=drive_link
+![image 1](https://github.com/nira10/Hadasim/assets/147534014/b3d82f1e-1074-4d1b-8b83-13ba993628ff)
 
 The system shows all the members of the health fund, 
 the options on the left side - deleting the patient, updating their details and viewing details related to corona. 
